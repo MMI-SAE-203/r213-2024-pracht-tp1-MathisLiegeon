@@ -38,6 +38,9 @@ onErrorCaptured((err, instance, info) => {
         <li>
           <RouterLink to="/boucle" class="hover:underline"> Boucle sur des données </RouterLink>
         </li>
+        <li>
+          <RouterLink to="/caroussel" class="hover:underline"> Caroussel </RouterLink>
+        </li>
       </ul>
     </nav>
   </Transition>
