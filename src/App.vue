@@ -23,6 +23,7 @@ onErrorCaptured((err, instance, info) => {
       aria-controls="mainNav"
       aria-expanded="true"
       class="rounded-full border-2 border-red-600 bg-red-300 px-2"
+      @pointerdown="menuIsOpen = !menuIsOpen"
       >
       menu
     </button>
