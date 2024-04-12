@@ -32,7 +32,7 @@ const sectionsData = [
 <template>
     <section v-for="({ label, texte }, key) of sectionsData" :key="key">
         <pre class="font-mono hidden">key : {{ key }}</pre>
-        <pre class="font-mono" @pointerdown="sectionOpen =  sectionOpen === key ? -1:key">{{ label }}</pre>
-        <pre class="font-mono" v-show="sectionOpen === key">{{ texte }}</pre>
+        <pre class="font-mono mb-2 text-xl text-center bg-indigo-500 px-3 py-1 rounded-md text-white hover:bg-indigo-400 transition-colors duration-300" @pointerdown="sectionOpen =  sectionOpen === key ? -1:key">{{ label }}</pre>
+        <pre class="font-mono text-center" v-show="sectionOpen === key">{{ texte }}</pre>
     </section>
 </template>
